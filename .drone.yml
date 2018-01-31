@@ -1,0 +1,4 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: geezyx/ruby-nodejs
