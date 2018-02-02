@@ -1,5 +1,12 @@
 pipeline:
   docker:
     image: plugins/docker
+    when:
+      event: pull_request
+  docker:
+    image: plugins/docker
     repo: geezyx/ruby-nodejs
     secrets: [ docker_username, docker_password ]
+    when:
+      event: push
+      branch: master
