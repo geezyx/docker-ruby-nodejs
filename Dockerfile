@@ -1,8 +1,8 @@
-FROM ruby:2.3.1
+FROM ruby
 
 RUN (curl -sL https://deb.nodesource.com/setup_4.x | bash) && \
     apt-get update && \
-    apt-get install -y nodejs git && \
+    apt-get install -y nodejs && \
     apt-get clean
 RUN npm install -g bower
 
