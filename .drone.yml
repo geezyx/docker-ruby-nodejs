@@ -1,9 +1,9 @@
 pipeline:
-  docker:
+  test_docker_build:
     image: plugins/docker
     when:
       event: pull_request
-  docker:
+  build_and_push_docker_image:
     image: plugins/docker
     repo: geezyx/ruby-nodejs
     auto_tag: true
