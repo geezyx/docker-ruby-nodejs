@@ -2,3 +2,4 @@ pipeline:
   docker:
     image: plugins/docker
     repo: geezyx/ruby-nodejs
+    secrets: [ docker_username, docker_password ]

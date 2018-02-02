@@ -2,7 +2,7 @@ FROM ruby:2.3.1
 
 RUN (curl -sL https://deb.nodesource.com/setup_4.x | bash) && \
     apt-get update && \
-    apt-get install -y nodejs && \
+    apt-get install -y nodejs git && \
     apt-get clean
 RUN npm install -g bower
 
