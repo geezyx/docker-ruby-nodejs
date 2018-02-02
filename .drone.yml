@@ -1,6 +1,7 @@
 pipeline:
   test_docker_build:
     image: plugins/docker
+    repo: geezyx/ruby-nodejs
     when:
       event: pull_request
   build_and_push_docker_image:
@@ -9,5 +10,5 @@ pipeline:
     auto_tag: true
     secrets: [ docker_username, docker_password ]
     when:
-      event: push
-      branch: master
+      event: push      
+branches: master
