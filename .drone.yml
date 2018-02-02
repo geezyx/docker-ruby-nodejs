@@ -2,4 +2,5 @@ pipeline:
   docker:
     image: plugins/docker
     repo: geezyx/ruby-nodejs
+    auto_tag: true
     secrets: [ docker_username, docker_password ]
